@@ -696,6 +696,65 @@ body {
   color: var(--gray-mid);
 }
 
+/* Caregivers Corner resource layout */
+.caregiver-resources {
+  padding-top: 0;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.resource-card {
+  background: var(--white);
+  border: 1px solid rgba(168, 146, 184, 0.2);
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+}
+
+.resource-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray-dark);
+  font-family: 'Lora', serif;
+}
+
+.resource-card p {
+  color: var(--gray-mid);
+  margin-bottom: 0.75rem;
+}
+
+.resource-card ul {
+  margin-left: 1.1rem;
+  color: var(--gray-dark);
+}
+
+.resource-card li + li {
+  margin-top: 0.35rem;
+}
+
+.team-updates {
+  margin-top: 1.5rem;
+  background: var(--cream);
+  border: 1px solid rgba(168, 146, 184, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.team-updates h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray-dark);
+  font-family: 'Lora', serif;
+}
+
+.team-updates p {
+  color: var(--gray-mid);
+}
+
 /* Footer - warm, inviting */
 .footer {
   background: linear-gradient(135deg, var(--purple-header) 0%, var(--purple-dark) 100%);
@@ -773,6 +832,10 @@ textarea:focus-visible {
   }
 
   .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-grid {
     grid-template-columns: 1fr;
   }
 

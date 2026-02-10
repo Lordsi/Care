@@ -56,8 +56,22 @@
     if (service) {
       const serviceInput = document.getElementById('service');
       if (serviceInput) {
-        const label = service === 'personal-care' ? 'Personal Care' : 
-                      service === 'domiciliary-care' ? 'Domiciliary Care' : service;
+        const serviceLabels = {
+          'personal-care': 'Personal Care',
+          'domiciliary-care': 'Domiciliary Care',
+          'medication-coordination': 'Medication and Appointment Coordination',
+          'wellness-monitoring': 'Wellness and Vital Sign Monitoring',
+          'respite-care': 'Family Respite Care',
+          'recovery-support': 'Post-Hospital Recovery Support',
+          'companionship': 'Companionship Visits',
+          'lifestyle-support': 'Lifestyle and Community Support',
+          'care-planning': 'Care Planning and Family Coordination',
+          'extended-care': 'Extended and Rotational Care'
+        };
+        const label = serviceLabels[service] || service
+          .split('-')
+          .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+          .join(' ');
         serviceInput.value = label;
       }
     }

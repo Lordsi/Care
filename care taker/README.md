@@ -6,8 +6,8 @@ A professional caregiving services website built from mockup designs.
 
 - **Home** – Hero section with "Dignified Care for Every Chapter of Life", team image, and core values (Respect, Dignity, Professionalism)
 - **Our Story** – Vision, Mission, featured team member, Leadership and Staff profiles
-- **Services** – Five service categories with "Learn More" buttons; Category 1 opens a detailed modal for Personal Care and Domiciliary Care
-- **Caregivers Corner** – Placeholder for caregiver resources
+- **Services** – Five service categories with detailed modals and direct inquiry links to the Contact page
+- **Caregivers Corner** – Resource hub with caregiver training, wellness support, policy guidance, and team updates
 - **Contact Us** – Contact form with optional service pre-fill from Services modal links
 
 ## Getting Started

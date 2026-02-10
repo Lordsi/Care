@@ -56,11 +56,11 @@
   </main>
 
   <!-- Category 1 Modal -->
-  <div id="modal-category1" class="modal-overlay">
+  <div id="modal-category1" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-category1">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('category1')" aria-label="Close">&times;</button>
       <div class="modal-content">
-        <h2>Category 1: Foundational Daily Care</h2>
+        <h2 id="modal-title-category1">Category 1: Foundational Daily Care</h2>
         <div class="modal-split">
           <div class="modal-section">
             <h4>Personal Care Assistance</h4>
@@ -83,43 +83,110 @@
     </div>
   </div>
 
-  <!-- Placeholder modals for other categories -->
-  <div id="modal-category2" class="modal-overlay">
+  <div id="modal-category2" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-category2">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('category2')" aria-label="Close">&times;</button>
       <div class="modal-content">
-        <h2>Category 2: Health & Wellness Coordination</h2>
-        <p>Details coming soon. <a href="contact.html">Contact us</a> for more information.</p>
+        <h2 id="modal-title-category2">Category 2: Health & Wellness Coordination</h2>
+        <div class="modal-split">
+          <div class="modal-section">
+            <h4>Medication and Appointment Coordination</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Clients managing multiple prescriptions, chronic conditions, or frequent clinic visits.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Medication reminders, appointment scheduling support, transport coordination, and follow-up notes for families.</p>
+            <a href="contact.html?service=medication-coordination" class="btn btn-purple">Inquire about Medication Coordination</a>
+          </div>
+          <div class="modal-section">
+            <h4>Wellness and Vital Sign Monitoring</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Individuals requiring routine health checks and early detection of potential concerns.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Blood pressure and wellness observations, hydration and nutrition monitoring, and escalation of changes to family or clinicians.</p>
+            <a href="contact.html?service=wellness-monitoring" class="btn btn-purple">Inquire about Wellness Monitoring</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div id="modal-category3" class="modal-overlay">
+  <div id="modal-category3" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-category3">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('category3')" aria-label="Close">&times;</button>
       <div class="modal-content">
-        <h2>Category 3: Specialized & Respite Support</h2>
-        <p>Details coming soon. <a href="contact.html">Contact us</a> for more information.</p>
+        <h2 id="modal-title-category3">Category 3: Specialized & Respite Support</h2>
+        <div class="modal-split">
+          <div class="modal-section">
+            <h4>Family Respite Care</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Primary caregivers who need planned breaks while ensuring continuity of care.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Short-term relief visits, evening and weekend support, and handover notes to keep routines consistent.</p>
+            <a href="contact.html?service=respite-care" class="btn btn-purple">Inquire about Respite Care</a>
+          </div>
+          <div class="modal-section">
+            <h4>Post-Hospital Recovery Support</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Clients transitioning home after surgery, illness, or rehabilitation.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Mobility support, recovery routine assistance, and home safety checks to reduce readmission risks.</p>
+            <a href="contact.html?service=recovery-support" class="btn btn-purple">Inquire about Recovery Support</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div id="modal-category4" class="modal-overlay">
+  <div id="modal-category4" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-category4">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('category4')" aria-label="Close">&times;</button>
       <div class="modal-content">
-        <h2>Category 4: Companionship & Lifestyle</h2>
-        <p>Details coming soon. <a href="contact.html">Contact us</a> for more information.</p>
+        <h2 id="modal-title-category4">Category 4: Companionship & Lifestyle</h2>
+        <div class="modal-split">
+          <div class="modal-section">
+            <h4>Companionship Visits</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Individuals experiencing social isolation or needing meaningful daily engagement.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Conversation, games, reading, routine check-ins, and emotional support built around client interests.</p>
+            <a href="contact.html?service=companionship" class="btn btn-purple">Inquire about Companionship</a>
+          </div>
+          <div class="modal-section">
+            <h4>Lifestyle and Community Support</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Clients who want help staying active, connected, and independent in the community.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Errands, escorted appointments, social outings, and support with healthy daily routines.</p>
+            <a href="contact.html?service=lifestyle-support" class="btn btn-purple">Inquire about Lifestyle Support</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div id="modal-category5" class="modal-overlay">
+  <div id="modal-category5" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-category5">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('category5')" aria-label="Close">&times;</button>
       <div class="modal-content">
-        <h2>Category 5: Comprehensive Support</h2>
-        <p>Details coming soon. <a href="contact.html">Contact us</a> for more information.</p>
+        <h2 id="modal-title-category5">Category 5: Comprehensive Support</h2>
+        <div class="modal-split">
+          <div class="modal-section">
+            <h4>Care Planning and Family Coordination</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Families coordinating multiple care needs and providers across changing schedules.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Initial assessments, personalized care plans, routine reviews, and communication summaries for all stakeholders.</p>
+            <a href="contact.html?service=care-planning" class="btn btn-purple">Inquire about Care Planning</a>
+          </div>
+          <div class="modal-section">
+            <h4>Extended and Rotational Care</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Clients with higher support requirements across daytime, evenings, or overnight periods.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Long-shift coverage, rotational caregiver schedules, and continuity protocols to keep care stable and predictable.</p>
+            <a href="contact.html?service=extended-care" class="btn btn-purple">Inquire about Extended Care</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
