@@ -6,6 +6,7 @@
   <meta name="description" content="Professional, compassionate care that respects independence. Dignified support for every chapter of life.">
   <title>Care Taker - Dignified Care for Every Chapter of Life</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/navigation.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -13,12 +14,15 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="header">
     <a href="index.html" class="logo">H</a>
-    <nav class="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="our-story.html">Our Story</a>
-      <a href="services.html">Services</a>
-      <a href="caregivers-corner.html">Caregivers Corner</a>
-      <a href="contact.html">Contact Us</a>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav-links">Menu</button>
+      <div class="nav-links" id="primary-nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="services.html">Services</a>
+        <a href="caregivers-corner.html">Caregivers Corner</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
     </nav>
   </header>
 

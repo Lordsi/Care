@@ -108,8 +108,33 @@ body {
 
 .nav {
   display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
   gap: 0.25rem;
   align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.26);
+  border-color: rgba(255, 255, 255, 0.45);
 }
 
 .nav a {
@@ -843,7 +868,7 @@ textarea:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .nav {
+  .nav-links {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -851,9 +876,62 @@ textarea:focus-visible {
 
 @media (max-width: 600px) {
   .header {
-    flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
     padding: 1rem;
+    min-height: 76px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .nav {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 101;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.55rem);
+    min-width: 210px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.2rem;
+    background: var(--white);
+    border: 1px solid rgba(168, 146, 184, 0.3);
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+    padding: 0.45rem;
+  }
+
+  .nav.open .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: var(--gray-dark);
+    padding: 0.6rem 0.8rem;
+  }
+
+  .nav-links a:hover {
+    background: var(--purple-soft);
+    color: var(--gray-dark);
+  }
+
+  .nav-links a.active {
+    background: var(--purple-soft);
+    color: var(--purple-dark);
   }
 
   .hero-text h1 {
