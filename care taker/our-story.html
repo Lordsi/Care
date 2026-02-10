@@ -24,78 +24,125 @@
     <div class="story-grid">
       <div class="story-left">
         <h2>Our Vision</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <p>A world where everyone—elderly, children, the sick, and those with disabilities—receives dignified, compassionate care that honours their humanity and supports their wellbeing.</p>
 
         <h2>Our Mission</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>To provide trusted in-home care and support for anyone in need: seniors aging in place, families with sick or disabled loved ones, children requiring extra care, and individuals recovering from illness. We match skilled, caring professionals with those who need comfort and support.</p>
       </div>
 
       <div class="story-right">
         <div class="profile-section">
           <h2>Our Leadership</h2>
           <div class="profile-grid">
-            <div class="profile-card">
+            <button type="button" class="profile-card" data-name="Sophia" data-profession="Director of Care" data-skills="Care strategy, senior care coordination, family liaison" data-img="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=80">
               <div class="profile-img-wrap">
                 <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=80" alt="Sophia">
               </div>
               <span>Meet Sophia...</span>
-            </div>
-            <div class="profile-card">
+            </button>
+            <button type="button" class="profile-card" data-name="Benjamin" data-profession="Operations Lead" data-skills="Team management, quality assurance, respite care planning" data-img="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80">
               <div class="profile-img-wrap">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Benjamin">
               </div>
               <span>Meet Benjamin...</span>
-            </div>
-            <div class="profile-card">
+            </button>
+            <button type="button" class="profile-card" data-name="Fiona" data-profession="Clinical Advisor" data-skills="Health & wellness coordination, post-surgery care, chronic illness support" data-img="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80">
               <div class="profile-img-wrap">
                 <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80" alt="Fiona">
               </div>
               <span>Meet Fiona...</span>
-            </div>
-            <div class="profile-card">
+            </button>
+            <button type="button" class="profile-card" data-name="Jane" data-profession="Family Services Manager" data-skills="Child care, family support, special needs coordination" data-img="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80">
               <div class="profile-img-wrap">
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Jane">
               </div>
               <span>Meet Jane...</span>
-            </div>
+            </button>
           </div>
         </div>
 
         <div class="profile-section">
           <h2>Our Staff</h2>
           <div class="profile-grid">
-            <div class="profile-card">
+            <button type="button" class="profile-card" data-name="Denise" data-profession="Senior Caregiver" data-skills="Personal care, mobility support, medication management, dementia care" data-img="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&q=80">
               <div class="profile-img-wrap">
                 <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&q=80" alt="Denise">
               </div>
               <span>Meet Denise...</span>
-            </div>
-            <div class="profile-card">
+            </button>
+            <button type="button" class="profile-card" data-name="Dumisani" data-profession="Caregiver" data-skills="Home support, meal preparation, companionship, respite care" data-img="https://randomuser.me/api/portraits/men/67.jpg">
               <div class="profile-img-wrap">
                 <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Dumisani">
               </div>
               <span>Meet Dumisani...</span>
-            </div>
-            <div class="profile-card">
+            </button>
+            <button type="button" class="profile-card" data-name="Abhijit" data-profession="Caregiver" data-skills="Post-surgery care, rehabilitation support, health monitoring" data-img="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&q=80">
               <div class="profile-img-wrap">
                 <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&q=80" alt="Abhijit">
               </div>
               <span>Meet Abhijit...</span>
-            </div>
-            <div class="profile-card">
+            </button>
+            <button type="button" class="profile-card" data-name="Mphatso" data-profession="Paediatric Caregiver" data-skills="Child care, developmental support, family assistance" data-img="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&q=80">
               <div class="profile-img-wrap">
                 <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&q=80" alt="Mphatso">
               </div>
               <span>Meet Mphatso...</span>
-            </div>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </main>
 
+  <!-- Caregiver profile popup -->
+  <div id="caregiver-modal" class="modal-overlay caregiver-modal" aria-hidden="true">
+    <div class="modal caregiver-modal-content">
+      <button class="modal-close" onclick="closeCaregiverModal()" aria-label="Close">&times;</button>
+      <div class="modal-content caregiver-modal-body">
+        <div class="caregiver-modal-photo">
+          <img id="caregiver-modal-img" src="" alt="">
+        </div>
+        <div class="caregiver-modal-info">
+          <h2 id="caregiver-modal-name"></h2>
+          <p class="caregiver-profession" id="caregiver-modal-profession"></p>
+          <h3>Skills & expertise</h3>
+          <p id="caregiver-modal-skills"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <p>© Care Taker. Professional, compassionate care for every chapter of life.</p>
   </footer>
+
+  <script>
+    function openCaregiverModal(card) {
+      const modal = document.getElementById('caregiver-modal');
+      document.getElementById('caregiver-modal-name').textContent = card.dataset.name;
+      document.getElementById('caregiver-modal-profession').textContent = card.dataset.profession;
+      document.getElementById('caregiver-modal-skills').textContent = card.dataset.skills;
+      document.getElementById('caregiver-modal-img').src = card.dataset.img || '';
+      document.getElementById('caregiver-modal-img').alt = card.dataset.name;
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeCaregiverModal() {
+      const modal = document.getElementById('caregiver-modal');
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.profile-card[data-name]').forEach(card => {
+      card.addEventListener('click', () => openCaregiverModal(card));
+    });
+    document.getElementById('caregiver-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeCaregiverModal();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') document.querySelector('.caregiver-modal.active') && closeCaregiverModal();
+    });
+  </script>
 </body>
 </html>
