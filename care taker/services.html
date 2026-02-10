@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tailored care services: daily support, health coordination, respite care, companionship, and more.">
+  <title>Services - Care Taker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="header">
+    <a href="index.html" class="logo">H</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="our-story.html">Our Story</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="caregivers-corner.html">Caregivers Corner</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="services-hero">
+      <h1>What we can do for you...</h1>
+      <p>Tailored support that honors independence and delivers peace of mind.</p>
+    </section>
+
+    <div class="services-grid">
+      <div class="service-card" style="--service-bg: url('https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=500');">
+        <div class="service-card-bg" aria-hidden="true"></div>
+        <h3>Category 1: Foundational Daily Care</h3>
+        <button class="btn btn-purple" onclick="openModal('category1')">Learn More...</button>
+      </div>
+      <div class="service-card" style="--service-bg: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500');">
+        <div class="service-card-bg" aria-hidden="true"></div>
+        <h3>Category 2: Health & Wellness Coordination</h3>
+        <button class="btn btn-purple" onclick="openModal('category2')">Learn More...</button>
+      </div>
+      <div class="service-card" style="--service-bg: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500');">
+        <div class="service-card-bg" aria-hidden="true"></div>
+        <h3>Category 3: Specialized & Respite Support</h3>
+        <button class="btn btn-purple" onclick="openModal('category3')">Learn More...</button>
+      </div>
+      <div class="service-card" style="--service-bg: url('https://images.unsplash.com/photo-1609220136736-443140cffec6?w=500');">
+        <div class="service-card-bg" aria-hidden="true"></div>
+        <h3>Category 4: Companionship & Lifestyle</h3>
+        <button class="btn btn-purple" onclick="openModal('category4')">Learn More...</button>
+      </div>
+      <div class="service-card" style="--service-bg: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500');">
+        <div class="service-card-bg" aria-hidden="true"></div>
+        <h3>Category 5: Comprehensive Support</h3>
+        <button class="btn btn-purple" onclick="openModal('category5')">Learn More...</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Category 1 Modal -->
+  <div id="modal-category1" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('category1')" aria-label="Close">&times;</button>
+      <div class="modal-content">
+        <h2>Category 1: Foundational Daily Care</h2>
+        <div class="modal-split">
+          <div class="modal-section">
+            <h4>Personal Care Assistance</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Seniors needing help, Individuals recovering from surgery, those with mobility challenges.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Bathing, grooming, dressing, toileting, and mobility support.</p>
+            <a href="contact.html?service=personal-care" class="btn btn-purple">Inquire about Personal Care</a>
+          </div>
+          <div class="modal-section">
+            <h4>Domiciliary Care (Home Support)</h4>
+            <p><strong>Who this is for:</strong></p>
+            <p>Seniors needing help, Individuals recovering from surgery, those with mobility challenges.</p>
+            <p><strong>Includes:</strong></p>
+            <p>Light housekeeping, laundry, meal preparation, and general home upkeep to maintain a safe, comfortable environment.</p>
+            <a href="contact.html?service=domiciliary-care" class="btn btn-purple">Inquire about Domiciliary Care</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placeholder modals for other categories -->
+  <div id="modal-category2" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('category2')" aria-label="Close">&times;</button>
+      <div class="modal-content">
+        <h2>Category 2: Health & Wellness Coordination</h2>
+        <p>Details coming soon. <a href="contact.html">Contact us</a> for more information.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-category3" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('category3')" aria-label="Close">&times;</button>
+      <div class="modal-content">
+        <h2>Category 3: Specialized & Respite Support</h2>
+        <p>Details coming soon. <a href="contact.html">Contact us</a> for more information.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-category4" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('category4')" aria-label="Close">&times;</button>
+      <div class="modal-content">
+        <h2>Category 4: Companionship & Lifestyle</h2>
+        <p>Details coming soon. <a href="contact.html">Contact us</a> for more information.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-category5" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('category5')" aria-label="Close">&times;</button>
+      <div class="modal-content">
+        <h2>Category 5: Comprehensive Support</h2>
+        <p>Details coming soon. <a href="contact.html">Contact us</a> for more information.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© Care Taker. Professional, compassionate care for every chapter of life.</p>
+  </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(id) {
+      document.getElementById('modal-' + id).classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.active').forEach(m => {
+          m.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
